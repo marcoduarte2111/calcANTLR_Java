@@ -13,16 +13,16 @@ Este proyecto implementa una calculadora utilizando ANTLR y Java. La calculadora
 
 ### 2. Descripción de la Implementación
 
-- **Gramática ANTLR (`Calc.g4`)**:
+- **Gramática ANTLR (`LabeledExpr.g4`)**:
   - Define la sintaxis para operaciones aritméticas, asignaciones y variables.
   - Permite manejar expresiones como `a + b * 2` y `(1 + 2) * 3`.
 
 - **Clases Generadas por ANTLR**:
-  - `CalcLexer.java`: Lexer para dividir el texto en tokens.
-  - `CalcParser.java`: Parser para analizar la estructura del texto según la gramática.
-  - `CalcBaseVisitor.java` y `CalcVisitor.java`: Clases base para implementar el visitante.
+  - `LabeledExprLexer.java`: Lexer para dividir el texto en tokens.
+  - `LabeledExprParser.java`: Parser para analizar la estructura del texto según la gramática.
+  - `LabeledExprBaseVisitor.java` y `LabeledExprVisitor.java`: Clases base para implementar el visitante.
 
-- **Visitor (`CalcVisitorImpl.java`)**:
+- **Visitor (`LabeledExprVisitorImpl.java`)**:
   - Implementa la lógica para evaluar expresiones y manejar variables.
   - Utiliza un `Map` para almacenar el valor de las variables y realiza cálculos según la expresión dada.
 
@@ -34,11 +34,11 @@ Este proyecto implementa una calculadora utilizando ANTLR y Java. La calculadora
    - Descarga el archivo JAR de ANTLR desde [la página de ANTLR](https://www.antlr.org/download.html).
 
 2. **Prepara la Gramática**:
-   - Crea un archivo llamado `Calc.g4` con el contenido de la gramática proporcionada.
+   - Crea un archivo llamado `LabeledExpr.g4` con el contenido de la gramática proporcionada.
 
 ### 2. Generar Clases con ANTLR
 
 Utiliza el siguiente comando para generar los archivos de lexer, parser, y visitor:
 
 ```bash
-java -jar /path/to/antlr-4.13.2-complete.jar -visitor Calc.g4
+java -jar /usr/local/bin/antlr-4.13.2-complete.jar -visitor LabeledExpr.g4
