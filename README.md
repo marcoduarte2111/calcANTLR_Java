@@ -36,9 +36,13 @@ Este proyecto implementa una calculadora utilizando ANTLR y Java. La calculadora
 2. **Prepara la Gramática**:
    - Crea un archivo llamado `LabeledExpr.g4` con el contenido de la gramática proporcionada.
 
-### 2. Generar Clases con ANTLR
+### 2. Generar Clases con ANTLR y Java
 
 Utiliza el siguiente comando para generar los archivos de lexer, parser, y visitor:
 
 ```bash
-java -jar /usr/local/bin/antlr-4.13.2-complete.jar -visitor LabeledExpr.g4
+java -jar /usr/local/bin/antlr-4.13.2-complete.jar -no-listener -visitor LabeledExpr.g4 # -visitor es requerido!!!
+
+javac Calc.java LabeledExpr*.java
+
+java Calc t.expr ·probar el codigo con prueba preexistente.
