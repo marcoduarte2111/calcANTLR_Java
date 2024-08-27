@@ -1,4 +1,4 @@
-####Grupo: Daniel Reyes, Juan Marco Duarte, Willian Cordero, Johan Garcia
+#### Grupo: Daniel Reyes, Juan Marco Duarte, Willian Cordero, Johan Garcia
 
 # Calculadora Implementada con ANTLR y Java
 
