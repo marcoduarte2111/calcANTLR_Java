@@ -1,3 +1,5 @@
+####Grupo: Daniel Reyes, Juan Marco Duarte, Willian Cordero, Johan Garcia
+
 # Calculadora Implementada con ANTLR y Java
 
 Este proyecto implementa una calculadora utilizando ANTLR y Java. La calculadora es capaz de manejar operaciones aritméticas básicas, así como variables y asignaciones. A continuación, se detallan los pasos para ejecutar el código y la descripción de cómo se implementó.
