@@ -31,12 +31,19 @@ Este proyecto implementa una calculadora utilizando ANTLR y Java. La calculadora
 ## Ejecución del Proyecto
 
 ### 1. Preparación del Entorno
+export CLASSPATH=".:/usr/local/lib/antlr-4.13.2-complete.jar:$CLASSPATH"
 
 1. **Instala ANTLR**:
    - Descarga el archivo JAR de ANTLR desde [la página de ANTLR](https://www.antlr.org/download.html).
 
 2. **Prepara la Gramática**:
    - Crea un archivo llamado `LabeledExpr.g4` con el contenido de la gramática proporcionada.
+
+3. **Ajustar variable de entorno**:
+  - Escribir en terminal (con base en la direcciòn del archivo Jar):
+```bash
+export CLASSPATH=".:/usr/local/lib/antlr-4.13.2-complete.jar:$CLASSPATH"
+  ```
 
 ### 2. Generar Clases con ANTLR y Java
 
